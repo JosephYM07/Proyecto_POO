@@ -42,8 +42,8 @@ public class Main {
                     } while (op == 1);
                     break;
                 case 7:
-                    System.exit(0);
                     System.out.println("Saliendo del programa...Saliendo del programa...Saliendo del programa...\nSaliendo del programa...\nSaliendo del programa...");
+                    System.exit(0);
                     break;
                 default:
             }
