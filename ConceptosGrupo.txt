@@ -4,3 +4,5 @@ Método: Describe los mecanismos que se encargan de la realizacion de tareas
 Setters:Son metodos que se utiliza para asignar valores a los atributos de un objeto que estemos trabajando.
 Getters:Son metodos que se utiliza para acceder a los atributos de un objeto fuera de la clase.
 Puntero:Nos permite acceder y manipulas los atributos y los metodos de un objeto del cual estemos trabajando.
+Constructor:No tiene tipo de retorno y es el encargado en inicializar los atributos del objeto
+Github: Es una plataforma de Desarrollo colaborativo
