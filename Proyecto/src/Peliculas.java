@@ -6,6 +6,7 @@ public class Peliculas {//Atributos
     String premios;
     String protagonista;
 
+    //Constructor
     public Peliculas(String director, String idioma, int anio, int tiempo_duracion, String premios, String protagonista, String descripcion) {
         this.director = director;
         this.idioma = idioma;
@@ -16,7 +17,9 @@ public class Peliculas {//Atributos
         this.descripcion = descripcion;
     }
 
+    //Metodos
     String descripcion;
+
     public String getDirector() {
         return director;
     }
