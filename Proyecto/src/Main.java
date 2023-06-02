@@ -78,7 +78,7 @@ public class Main {
 
                 case 1:
                     do {
-                        System.out.println("DETALLES DE LA PELÍCULA John Wick 3: Parabellum");
+                        System.out.println("DETALLES DE LA PELÍCULA JOHN WICK 3: PARABELLUM");
                         mostrarDetallesPelicula(pelicula1);
                         System.out.println("Desea continuar en esta seccion 1.-Si 2.-No:");
                         opcion = scanner.nextInt();
@@ -86,7 +86,7 @@ public class Main {
                     break;
                 case 2:
                     do {
-                        System.out.println("DETALLES DE LA PELÍCULA Bloodshot");
+                        System.out.println("DETALLES DE LA PELÍCULA BLOODSHOT");
                         mostrarDetallesPelicula(pelicula2);
                         System.out.println("Desea continuar en esta seccion 1.-Si 2.-No:");
                         opcion = scanner.nextInt();
@@ -121,7 +121,7 @@ public class Main {
             switch (opcion) {
                 case 1:
                     do {
-                        System.out.println("DETALLES DE LA PELÍCULA Jumanji: En la selva");
+                        System.out.println("DETALLES DE LA PELÍCULA JUMANJI: EN LA SELVA");
                         mostrarDetallesPelicula(peliculas3);
                         System.out.println("Desea continuar en esta seccion 1.-Si 2.-No:");
                         opcion = scanner.nextInt();
@@ -129,7 +129,7 @@ public class Main {
                     break;
                 case 2:
                     do {
-                        System.out.println("DETALLES DE LA PELÍCULA El juego de Ender");
+                        System.out.println("DETALLES DE LA PELÍCULA EL JUEGO DE ENDER");
                         mostrarDetallesPelicula(peliculas4);
                         System.out.println("Desea continuar en esta seccion 1.-Si 2.-No:");
                         opcion = scanner.nextInt();
@@ -144,11 +144,12 @@ public class Main {
 
     public static void submenuCienciaFiccion() {
         int opcion;
-        Peliculas peliculas5 = new Peliculas("George Lucas", "Inglès", 1977, 136, "MTV Movie Award a Mejor Escena de Acción", "Obi-Wan Kenobi (Ewan McGregor)", "La trama descrita en las nueve películas que componen la serie principal de Star Wars relata las vivencias de la familia Skywalker,17\u200B «hace mucho tiempo en una galaxia muy muy lejana»,18\u200B cuyos integrantes son capaces de percibir y utilizar «La Fuerza», lo cual les permite desarrollar habilidades como la telequinesis, la clarividencia y el control mental, entre otras.");
+        Peliculas peliculas5 = new Peliculas("George Lucas", "Inglès", 1977, 136, "MTV Movie Award a Mejor Escena de Acción", "Obi-Wan Kenobi (Ewan McGregor)", "La trama descrita en las nueve películas que componen la serie principal de Star Wars relata las vivencias de la familia Skywalker,17 «hace mucho tiempo en una galaxia muy muy lejana»,18 cuyos integrantes son capaces de percibir y utilizar «La Fuerza», lo cual les permite desarrollar habilidades como la telequinesis, la clarividencia y el control mental, entre otras.");
+        Peliculas peliculas6 = new Peliculas("James Gunn", "Inglés", 2014, 122, "Premio Kerrang! a la Mejor Película", "Star-Lord (Steve Englehart)", "En 1988, tras la muerte de su madre, un joven, Peter Quill es abducido de la Tierra por los Devastadores (Ravagers, en inglés), un grupo de piratas espaciales liderados por Yondu Udonta. Veintiséis años más tarde en el planeta Morag, Quill roba un artefacto en forma de esfera, solo para ser interceptado por Korath el Perseguidor, un subordinado de un fanático Kree llamado Ronan el Acusador. A pesar de que Quill escapa con el artefacto, Yondu descubre su robo y publica una recompensa por su captura, mientras que Ronan envía a la asesina Gamora tras el Orbe, el cual Ronan busca dar al malvado titán Thanos a cambio de la destrucción de los Xandarianos.");
         do {
             System.out.println("\n\tAcción");
             System.out.println("1. Detalles de la película Star Wars");
-            System.out.println("2. Detalles de la película: ");
+            System.out.println("2. Detalles de la película Guardianes de la Galaxia: ");
             System.out.println("3. Volver al menú principal");
             System.out.print("Ingresa tu opción: ");
             opcion = scanner.nextInt();
@@ -162,14 +163,19 @@ public class Main {
             switch (opcion) {
                 case 1:
                     do {
-                        System.out.println("DETALLES DE LA PELÍCULA star Wars");
+                        System.out.println("DETALLES DE LA PELÍCULA STAR WARS");
                         mostrarDetallesPelicula(peliculas5);
                         System.out.println("Desea continuar en esta seccion 1.-Si 2.-No:");
                         opcion = scanner.nextInt();
                     } while (opcion == 1);
                     break;
                 case 2:
-                    System.out.println("DETALLES DE LA PELÍCULA 2");
+                    do {
+                        System.out.println("DETALLES DE LA PELÍCULA GUARDIANES DE LA GALAXIA");
+                        mostrarDetallesPelicula(peliculas6);
+                        System.out.println("Desea continuar en esta seccion 1.-Si 2.-No:");
+                        opcion = scanner.nextInt();
+                    } while (opcion == 1);
                     break;
                 case 3:
                     System.out.println("Volviendo al menú principal...");
@@ -180,10 +186,12 @@ public class Main {
 
     public static void submenuComedia() {
         int opcion;
+        Peliculas peliculas7 = new Peliculas("Dennis Dugan", "Inglés", 2010, 102, "MTV Movie Award a la Mejor Frase de una Película", "Lenny Feder (Adam Sandler)", "Cinco amigos que formaban un equipo de baloncesto ganaron un campeonato juvenil. Durante la celebración en una casa junto a un lago, su entrenador les anima a vivir sus vidas de la misma forma que jugaron el partido. Treinta años después, los cinco amigos, que permanecieron juntos hasta su graduación, han hecho sus vidas por separado y han perdido el contacto. Lenny Feder es un exitoso representante de estrellas de Hollywood, casado con Roxanne, una diseñadora de moda, y con tres hijos, Greg, Keithie y Becky. Lenny está molesto con el comportamiento consentido de Greg y Keithie, acostumbrados a todo tipo de privilegios y comodidades. Eric Lamonsoff dice ser el copropietario de una empresa de muebles, está casado con Sally, y tiene dos hijos, Donna y Bean. Sally sigue amamantando a Bean a pesar de que tiene cuatro años, lo que avergüenza a Eric. Kurt McKenzie es un amo de casa casado con Deanne, el principal sostén de la familia, y tiene dos hijos, Andre y Charlotte. Deanne está embarazada de un tercer hijo, y su madre Ronzoni vive con ellos. Rob Hilliard se ha divorciado tres veces y tiene tres hijas, Jasmine, Amber y Bridget, de sus anteriores matrimonios, a quienes apenas conoce. Su nueva esposa, Gloria, es 30 años mayor que él. Marcus Higgins es un soltero promiscuo. A lo largo de la película, los cinco amigos se burlan entre ellos de forma amistosa: Lenny por ser rico y consentido, Eric por ser obeso y goloso, Kurt por su color y por vivir dominado por su esposa, Rob por su baja estatura, su pelo y por tener una esposa anciana, y Marcus por su forma de vida desordenada y perezosa.");
+        Peliculas peliculas8 = new Peliculas("Chris Columbus", "Inglés", 2015, 106, "No tiene ningùn premio", "Sam Brenner (Adam Sandler)", "Los jóvenes Sam Brenner y Will Cooper esperan la gran inauguración de una sala de arcade. Después de abrir la sala de arcade, Sam descubre que es bastante bueno en varios videojuegos, a pesar de ser un novato. Will le dice a Sam que se inscriba al campeonato mundial de videojuegos de arcade que se realizará ese día en la misma sala. Durante el evento se encuentran con Ludlow Lamonsoff, un chico raro pero brillante, quien también compite al saber lo bien que maneja el videojuego Centipede y que, además, está enamorado de Lady Lisa, un personaje del videojuego Dojo Quest. Antes de empezar el campeonato, informan que los ejemplos de los videojuegos que van a jugar se pondrán dentro de una cápsula del tiempo junto a otros ejemplos de la vida y cultura para poder contactar con otras formas de vida.");
         do {
             System.out.println("\n\tAcción");
-            System.out.println("1. Detalles de la película 1");
-            System.out.println("2. Detalles de la película 2");
+            System.out.println("1. Detalles de la película Son como niños");
+            System.out.println("2. Detalles de la película Pixels");
             System.out.println("3. Volver al menú principal");
             System.out.print("Ingresa tu opción: ");
             opcion = scanner.nextInt();
@@ -196,10 +204,21 @@ public class Main {
             }
             switch (opcion) {
                 case 1:
-                    System.out.println("DETALLES DE LA PELÍCULA 1");
+                    do {
+                        System.out.println("DETALLES DE LA PELÍCULA SON COMO NIÑOS");
+                        mostrarDetallesPelicula(peliculas7);
+                        System.out.println("Desea continuar en esta seccion 1.-Si 2.-No:");
+                        opcion = scanner.nextInt();
+                    }
+                    while (opcion == 1);
                     break;
                 case 2:
-                    System.out.println("DETALLES DE LA PELÍCULA 2");
+                    do {
+                        System.out.println("DETALLES DE LA PELÍCULA PIXELS");
+                        mostrarDetallesPelicula(peliculas8);
+                        System.out.println("Desea continuar en esta seccion 1.-Si 2.-No:");
+                        opcion = scanner.nextInt();
+                    } while (opcion == 1);
                     break;
                 case 3:
                     System.out.println("Volviendo al menú principal...");
