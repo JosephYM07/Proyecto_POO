@@ -276,10 +276,14 @@ public class Main {
 
     public static void submenuTerror() {
         int opcion;
+        Peliculas pelicula11 = new Peliculas("Andrés Muschietti", "Inglés", 2017, 135, "Mejor Película de Terror y el Premio MTV Movie & TV al Mejor Villano (Bill Skarsgård).", "Jaeden Martell",
+                "La película IT se desarrolla en el pueblo de Derry, donde un grupo de niños enfrenta a una\n entidad malévola que adopta la forma de un payaso llamado Pennywise. Los niños,\n autodenominados El Club de los Perdedores, luchan contra sus miedos más profundos\n mientras intentan derrotar a Pennywise. La historia se desarrolla en dos líneas temporales,\n mostrando el enfrentamiento con el payaso tanto en su infancia como en su vida adulta. La\n película combina elementos de terror, suspenso y drama, destacando las actuaciones y el\n icónico papel de Pennywise interpretado por Bill Skarsgård. IT es una adaptación de la\n novela de Stephen King y recibió premios y reconocimiento por su impacto en el género del terror.");
+        Peliculas peliculas12 = new Peliculas("James Wan", "Inglés", 2010, 103, " Fright Meter Award for Best Actress In A Supporting Role,\n Fright Meter Award for Best Horror Movie", "Patrick Wilson",
+                "Insidious cuenta la historia de una familia que se muda a una nueva casa y comienza a\n experimentar fenómenos paranormales, especialmente con su hijo Dalton, quien entra en un\n inexplicable coma. Desesperados por encontrar respuestas, los padres recurren a expertos\n en lo sobrenatural y descubren que su hijo está atrapado en un plano astral llamado La\n Dimensión de los Espíritus. A medida que profundizan en el mundo de los espíritus, se\n enfrentan a fuerzas malignas y secretos oscuros que amenazan su vida y su cordura.");
         do {
             System.out.println("\n\tAcción");
-            System.out.println("1. Detalles de la película 1");
-            System.out.println("2. Detalles de la película 2");
+            System.out.println("1. Detalles de la película IT(ESO)");
+            System.out.println("2. Detalles de la película INSIDIOUS");
             System.out.println("3. Volver al menú principal");
             System.out.print("Ingresa tu opción: ");
             opcion = scanner.nextInt();
@@ -291,11 +295,22 @@ public class Main {
                 opcion = scanner.nextInt();
             }
             switch (opcion) {
+
                 case 1:
-                    System.out.println("DETALLES DE LA PELÍCULA 1");
+                    do {
+                        System.out.println("DETALLES DE LA PELÍCULA IT(ESO)");
+                        mostrarDetallesPelicula(pelicula11);
+                        System.out.println("Desea continuar en esta seccion 1.-Si 2.-No:");
+                        opcion = scanner.nextInt();
+                    } while (opcion == 1);
                     break;
                 case 2:
-                    System.out.println("DETALLES DE LA PELÍCULA 2");
+                    do {
+                        System.out.println("DETALLES DE LA PELÍCULA INSIDIOUS");
+                        mostrarDetallesPelicula(peliculas12);
+                        System.out.println("Desea continuar en esta seccion 1.-Si 2.-No:");
+                        opcion = scanner.nextInt();
+                    } while (opcion == 1);
                     break;
                 case 3:
                     System.out.println("Volviendo al menú principal...");
