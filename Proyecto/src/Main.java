@@ -261,7 +261,7 @@ public class Main {
                 case 2:
                     do {
                         System.out.println("DETALLES DE LA PELÍCULA SIEMPRE A TU LADO");
-                        mostrarDetallesPelicula(peliculas9);
+                        mostrarDetallesPelicula(peliculas10);
                         System.out.println("Desea continuar en esta seccion 1.-Si 2.-No:");
                         opcion = scanner.nextInt();
 
