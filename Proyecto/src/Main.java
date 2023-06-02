@@ -232,6 +232,8 @@ public class Main {
         Peliculas peliculas9 = new Peliculas("Ric Roman Waugh", "Inglés", 2013, 112, " En la 64ª entrega de los Globos de Oro: Premio al mejor director, \nmejor película dramática,  mejor actor de reparto, mejor guion ", "Leonardo DiCaprio ",
                 "El Infiltrado es una película de suspenso y acción dirigida por Martin Scorsese. La trama\n gira en torno a Billy Costigan (interpretado por Leonardo DiCaprio), un joven policía que se\n infiltra en la mafia irlandesa en Boston para desmantelarla desde adentro. Mientras tanto,\n Colin Sullivan (interpretado por Matt Damon), un miembro de la fuerza policial, trabaja como\n espía para la mafia dentro del departamento de policía. Ambos personajes se ven atrapados\n en una red de engaños y traiciones, sin saber quién está realmente del lado de la justicia. A\n medida que la tensión aumenta, Billy y Colin se acercan peligrosamente a descubrir la\n " +
                         "verdad y se enfrentan a decisiones difíciles que pondrán en peligro sus vidas. La película es\n reconocida por su estilo visualmente impactante, su narrativa compleja y las actuaciones\n destacadas de su elenco.");
+        Peliculas peliculas10 = new Peliculas("Lasse Hallström", "Ingles", 2009, 93, "Premio a la Mejor Película del 2010 en el Festival de Cine de Sedona.", "Richard Gere",
+                "Siempre a tu lado es un drama basado en la historia real de Hachiko, un perro Akita que\n demuestra una lealtad inquebrantable hacia su dueño, el profesor Parker Wilson. Tras la\n muerte de Parker, Hachiko sigue acudiendo diariamente a la estación de tren, esperando su\n regreso. La historia conmueve a la comunidad y muestra el poder del amor incondicional y la\n conexión entre humanos y animales. La película destaca los valores de la amistad y la\n lealtad, dejando una huella imborrable en quienes la presencian.");
         do {
             System.out.println("\n\tAcción");
             System.out.println("1. Detalles de la pelicula El Infiltrado");
@@ -257,7 +259,13 @@ public class Main {
 
                     break;
                 case 2:
-                    System.out.println("DETALLES DE LA PELÍCULA 2");
+                    do {
+                        System.out.println("DETALLES DE LA PELÍCULA SIEMPRE A TU LADO");
+                        mostrarDetallesPelicula(peliculas9);
+                        System.out.println("Desea continuar en esta seccion 1.-Si 2.-No:");
+                        opcion = scanner.nextInt();
+
+                    } while (opcion == 1);
                     break;
                 case 3:
                     System.out.println("Volviendo al menú principal...");
