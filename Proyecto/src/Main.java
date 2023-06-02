@@ -144,10 +144,11 @@ public class Main {
 
     public static void submenuCienciaFiccion() {
         int opcion;
+        Peliculas peliculas5 = new Peliculas("George Lucas", "Inglès", 1977, 136, "MTV Movie Award a Mejor Escena de Acción", "Obi-Wan Kenobi (Ewan McGregor)", "La trama descrita en las nueve películas que componen la serie principal de Star Wars relata las vivencias de la familia Skywalker,17\u200B «hace mucho tiempo en una galaxia muy muy lejana»,18\u200B cuyos integrantes son capaces de percibir y utilizar «La Fuerza», lo cual les permite desarrollar habilidades como la telequinesis, la clarividencia y el control mental, entre otras.");
         do {
             System.out.println("\n\tAcción");
-            System.out.println("1. Detalles de la película 1");
-            System.out.println("2. Detalles de la película 2");
+            System.out.println("1. Detalles de la película Star Wars");
+            System.out.println("2. Detalles de la película: ");
             System.out.println("3. Volver al menú principal");
             System.out.print("Ingresa tu opción: ");
             opcion = scanner.nextInt();
@@ -160,7 +161,12 @@ public class Main {
             }
             switch (opcion) {
                 case 1:
-                    System.out.println("DETALLES DE LA PELÍCULA 1");
+                    do {
+                        System.out.println("DETALLES DE LA PELÍCULA star Wars");
+                        mostrarDetallesPelicula(peliculas5);
+                        System.out.println("Desea continuar en esta seccion 1.-Si 2.-No:");
+                        opcion = scanner.nextInt();
+                    } while (opcion == 1);
                     break;
                 case 2:
                     System.out.println("DETALLES DE LA PELÍCULA 2");
